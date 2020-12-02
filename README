@@ -1,4 +1,16 @@
-this is a directory for James written custom segments
+this is a directory for James written custom segment function ascii_value,
+that mimics https://vim.fandom.com/wiki/Showing_the_ASCII_value_of_the_current_character
 
 Most of segments are copies of default vim segments
 ~/Library/Python/2.7/lib/python/site-packages/powerline/segments/vim 
+
+Creating a segment with instructions from https://devpro.media/custom-powerline-segment/#prerequisites
+
+This is a copy of my ~/.powerline_segments folder. However, in order for vim to find this python plugin,
+it must be installed to pip via pip install --editable ~/.powerline_segments (and/or pip3 for python3 instead of python2)
+
+In my ~/.config/powerline/themes/vim/default.json, I have the following in my right segments
+      {
+        "function": "powerline-james.custom.ascii_value",
+        "draw_soft_divider": false
+      },
